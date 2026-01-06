@@ -71,14 +71,14 @@
         num_layer {
             display-name = "Num";
             bindings = <
-&trans  &kp LEFT_PARENTHESIS  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp RIGHT_PARENTHESIS  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp COLON  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp EQUAL  &trans  &kp RIGHT_SHIFT  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &kp RIGHT_GUI  &trans  &trans  &kp TILDE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH  &trans  &trans  &trans  &trans  &trans  &trans  &kp PERIOD  &kp NUMBER_0  &kp MINUS  &trans  &trans  &trans
+&trans  &kp DE_LEFT_PARENTHESIS  &kp DE_N7  &kp DE_N8  &kp DE_N9  &kp DE_RIGHT_PARENTHESIS  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp DE_EXCLAMATION  &kp DE_N4  &kp DE_N5  &kp DE_N6  &kp DE_PLUS  &trans  &kp RIGHT_SHIFT  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &kp RIGHT_GUI  &trans  &trans  &kp DE_TILDE  &kp DE_N1  &kp DE_N2  &kp DE_N3  &kp DE_SLASH  &trans  &trans  &trans  &trans  &trans  &trans  &kp DE_PERIOD  &kp DE_N0  &kp DE_MINUS  &trans  &trans  &trans
             >;
         };
 
         sym_layer {
             display-name = "Sym";
             bindings = <
-&trans  &kp LEFT_BRACE  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_BRACE  &trans  &kp DE_A_UMLAUT  &kp DE_O_UMLAUT  &kp DE_U_UMLAUT  &trans  &trans  &trans  &kp COLON  &kp DOLLAR  &kp PERCENT  &kp CARET  &kp PLUS  &trans  &kp RIGHT_SHIFT  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &kp RIGHT_GUI  &trans  &trans  &kp GRAVE  &kp EXCL  &kp AT  &kp HASH  &kp PIPE  &trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE  &trans  &trans  &trans
+&trans  &kp LEFT_BRACE  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_BRACE  &trans  &kp DE_A_UMLAUT  &kp DE_O_UMLAUT  &kp DE_U_UMLAUT  &trans  &trans  &trans  &kp DE_PIPE  &kp DOLLAR  &kp PERCENT  &kp CARET  &kp PLUS  &trans  &kp RIGHT_SHIFT  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &kp RIGHT_GUI  &trans  &trans  &kp GRAVE  &kp EXCL  &kp AT  &kp HASH  &kp DE_BACKSLASH  &trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE  &trans  &trans  &trans
             >;
         };
 
