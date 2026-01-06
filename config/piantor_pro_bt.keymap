@@ -16,6 +16,34 @@
 };
 
 / {
+    behaviors {
+        HRM_L: HRM_L {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HRM_L";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <400>;
+            quick-tap-ms = <400>;
+            require-prior-idle-ms = <400>;
+            flavor = "tap-preferred";
+            hold-trigger-key-positions = <6 7 8 9 10 22 34 33 21 20 32 31 19 18 30>;
+        };
+
+        HRM_R: HRM_R {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HRM_R";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <400>;
+            quick-tap-ms = <400>;
+            require-prior-idle-ms = <400>;
+            flavor = "tap-preferred";
+            hold-trigger-key-positions = <29 28 27 26 25 13 1 2 4 5 15 16 17 14 3>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
