@@ -27,12 +27,12 @@
             //                    | GUI | LWR | SPC | ENT | RSE  | ALT |
 
             bindings = <
-&trans  &kp Q  &kp W  &kp F  &kp P  &kp B  &kp J  &kp L  &kp U  &kp Y  &trans  &trans  &trans  &kp A  &kp R  &kp S  &kp T  &kp G  &kp H  &kp J  &kp K  &kp L  &kp SEMI  &trans  &trans  &kp Z  &kp X  &kp C  &kp D  &kp V  &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH  &trans  &kp LGUI  &mo 1  &kp SPACE  &kp RET  &mo 2  &kp RALT
+&trans  &kp Q  &kp W  &kp F  &kp P  &kp B  &kp J  &kp L  &kp U  &kp Y  &trans  &trans  &trans  &kp A  &kp R  &kp S  &kp T  &kp G  &kp H  &kp J  &kp K  &kp L  &kp SEMI  &trans  &trans  &kp Z  &kp X  &kp C  &kp D  &kp V  &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH  &trans  &lt 2 ESCAPE  &lt 1 SPACE  &lt 2 TAB  &lt 5 RETURN  &lt 4 BACKSPACE  &lt 6 DELETE
             >;
         };
 
-        lower_layer {
-            display-name = "NUMBER";
+        nav_layer {
+            display-name = "Nav";
 
             // -----------------------------------------------------------------------------------------
             // |  TAB |  1  |  2  |  3  |  4  |  5    |  6  |  7  |  8  |  9  |  0  | BSPC |
@@ -45,8 +45,8 @@
             >;
         };
 
-        raise_layer {
-            display-name = "SYMBOL";
+        mouse_layer {
+            display-name = "Mouse";
 
             // -----------------------------------------------------------------------------------------
             // |  TAB |  !  |  @  |  #  |  $  |  %  |  ^  |  &  |  *  |  (  |  )  | BSPC |
@@ -59,29 +59,29 @@
             >;
         };
 
-        extra_layer_1 {
-            display-name = "EXTRA 1";
+        media_layer {
+            display-name = "Media";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
-        extra_layer_2 {
-            display-name = "EXTRA 2";
+        num_layer {
+            display-name = "Num";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
-        extra_layer_3 {
-            display-name = "EXTRA 3";
+        sym_layer {
+            display-name = "Sym";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
-        extra_layer_4 {
-            display-name = "EXTRA 4";
+        fun_layer {
+            display-name = "Fun";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
