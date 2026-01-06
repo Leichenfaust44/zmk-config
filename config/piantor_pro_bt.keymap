@@ -71,14 +71,14 @@
         num_layer {
             display-name = "Num";
             bindings = <
-&trans  &kp DE_LEFT_PARENTHESIS  &kp DE_N7  &kp DE_N8  &kp DE_N9  &kp DE_RIGHT_PARENTHESIS  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp DE_EXCLAMATION  &kp DE_N4  &kp DE_N5  &kp DE_N6  &kp DE_PLUS  &trans  &kp RIGHT_SHIFT  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &kp RIGHT_GUI  &trans  &trans  &kp DE_TILDE  &kp DE_N1  &kp DE_N2  &kp DE_N3  &kp DE_SLASH  &trans  &trans  &trans  &trans  &trans  &trans  &kp DE_PERIOD  &kp DE_N0  &kp DE_MINUS  &trans  &trans  &trans
+&trans  &kp DE_LESS_THAN  &kp DE_N7  &kp DE_N8  &kp DE_N9  &kp DE_GREATER_THAN  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp DE_EXCLAMATION  &kp DE_N4  &kp DE_N5  &kp DE_N6  &kp DE_PLUS  &trans  &kp RIGHT_SHIFT  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &kp RIGHT_GUI  &trans  &trans  &kp DE_TILDE  &kp DE_N1  &kp DE_N2  &kp DE_N3  &kp DE_SLASH  &trans  &trans  &trans  &trans  &trans  &trans  &kp DE_PERIOD  &kp DE_N0  &kp DE_MINUS  &trans  &trans  &trans
             >;
         };
 
         sym_layer {
             display-name = "Sym";
             bindings = <
-&trans  &kp LEFT_BRACE  &kp DE_AMPERSAND  &kp DE_EQUAL  &kp DE_DOUBLE_QUOTES  &kp RIGHT_BRACE  &trans  &kp DE_A_UMLAUT  &kp DE_O_UMLAUT  &kp DE_U_UMLAUT  &trans  &trans  &trans  &kp DE_PIPE  &kp DE_DOLLAR  &kp DE_PERCENT  &kp CARET  &kp DE_ASTERISK  &trans  &kp RIGHT_SHIFT  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &kp RIGHT_GUI  &trans  &trans  &kp GRAVE  &kp EXCL  &kp AT  &kp DE_HASH  &kp DE_BACKSLASH  &trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE  &trans  &trans  &trans
+&trans  &kp DE_LEFT_BRACE  &kp DE_AMPERSAND  &kp DE_EQUAL  &kp DE_DOUBLE_QUOTES  &kp DE_RIGHT_BRACE  &trans  &kp DE_A_UMLAUT  &kp DE_O_UMLAUT  &kp DE_U_UMLAUT  &trans  &trans  &trans  &kp DE_PIPE  &kp DE_DOLLAR  &kp DE_PERCENT  &kp DE_CARET  &kp DE_ASTERISK  &trans  &kp RIGHT_SHIFT  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &kp RIGHT_GUI  &trans  &trans  &kp GRAVE  &kp DE_EXCLAMATION  &kp DE_AT_SIGN  &kp DE_HASH  &kp DE_BACKSLASH  &trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE  &trans  &trans  &trans
             >;
         };
 
