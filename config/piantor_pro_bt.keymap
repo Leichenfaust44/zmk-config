@@ -29,7 +29,7 @@
             //                    | GUI | LWR | SPC | ENT | RSE  | ALT |
 
             bindings = <
-&trans  &kp Q  &kp W  &kp F  &kp P  &kp B  &kp J  &kp L  &kp U  &kp Y  &kp DE_QUESTION  &trans  &trans  &kp LG(A)  &kp LA(R)  &kp LC(S)  &kp LS(T)  &kp G  &kp M  &kp RS(N)  &kp RC(E)  &kp RA(I)  &kp RG(O)  &trans  &trans  &kp Z  &kp X  &kp C  &kp D  &kp V  &kp K  &kp H  &kp DE_COMMA  &kp DE_PERIOD  &kp DE_MINUS  &trans  &lt 2 ESCAPE  &lt 1 SPACE  &lt 2 TAB  &lt 5 RETURN  &lt 4 BACKSPACE  &lt 6 DELETE
+&trans  &kp DE_Q  &kp DE_W  &kp DE_F  &kp DE_P  &kp DE_B  &kp DE_J  &kp DE_L  &kp DE_U  &kp DE_Y  &kp DE_QUESTION  &trans  &trans  &kp LG(DE_A)  &kp LA(DE_R)  &kp LC(DE_S)  &kp LS(T)  &kp DE_G  &kp DE_M  &kp RS(DE_N)  &kp RC(DE_E)  &kp RA(DE_I)  &kp RG(DE_O)  &trans  &trans  &kp DE_Z  &kp DE_X  &kp DE_C  &kp DE_D  &kp DE_V  &kp DE_K  &kp DE_H  &kp DE_COMMA  &kp DE_PERIOD  &kp DE_MINUS  &trans  &lt 2 DE_ESCAPE_CHARACTER  &lt 1 DE_SPACE  &lt 2 TAB  &lt 5 RETURN  &lt 4 BACKSPACE  &lt 6 DELETE
             >;
         };
 
