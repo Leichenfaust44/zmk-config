@@ -28,7 +28,7 @@
             //                    | GUI | LWR | SPC | ENT | RSE  | ALT |
 
             bindings = <
-&trans  &kp Q  &kp W  &kp F  &kp P  &kp B  &kp J  &kp L  &kp U  &kp Y  &kp QUESTION  &trans  &trans  &kp A  &kp R  &kp S  &kp T  &kp G  &kp H  &kp J  &kp K  &kp L  &kp SEMI  &trans  &trans  &kp Z  &kp X  &kp C  &kp D  &kp V  &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH  &trans  &lt 2 ESCAPE  &lt 1 SPACE  &lt 2 TAB  &lt 5 RETURN  &lt 4 BACKSPACE  &lt 6 DELETE
+&trans  &kp Q  &kp W  &kp F  &kp P  &kp B  &kp J  &kp L  &kp U  &kp Y  &kp QUESTION  &trans  &trans  &kp LG(A)  &kp LA(R)  &kp LC(S)  &kp LS(T)  &kp G  &kp H  &kp RS(J)  &kp RC(K)  &kp RA(L)  &kp RG(SEMI)  &trans  &trans  &kp Z  &kp X  &kp C  &kp D  &kp V  &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH  &trans  &lt 2 ESCAPE  &lt 1 SPACE  &lt 2 TAB  &lt 5 RETURN  &lt 4 BACKSPACE  &lt 6 DELETE
             >;
         };
 
@@ -42,7 +42,7 @@
             //                    | GUI |     | SPC   | ENT |     | ALT |
 
             bindings = <
-&kp TAB  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &kp BSPC  &kp LCTRL  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans  &kp LSHFT  &bt BT_CLR  &rgb_ug RGB_TOG  &sys_reset  &bootloader  &studio_unlock  &trans  &trans  &trans  &trans  &trans  &trans  &kp LGUI  &trans  &kp SPACE  &kp LGUI  &trans  &kp SPACE
+&trans  &trans  &trans  &trans  &trans  &kp N5  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &trans  &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans  &trans  &bt BT_CLR  &rgb_ug RGB_TOG  &sys_reset  &bootloader  &studio_unlock  &trans  &trans  &trans  &trans  &trans  &trans  &kp LGUI  &trans  &kp SPACE  &kp LGUI  &trans  &kp SPACE
             >;
         };
 
