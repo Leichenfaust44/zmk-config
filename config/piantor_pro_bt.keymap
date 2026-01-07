@@ -103,7 +103,7 @@
         sym_layer {
             display-name = "Sym";
             bindings = <
-&trans  &morph_tab_hold DE_RIGHT_BRACE DE_LEFT_BRACE  &kp DE_LESS_THAN  &morph_tab_hold DE_SINGLE_QUOTE DE_DOUBLE_QUOTES  &kp DE_GREATER_THAN  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &morph_tab_hold DE_RIGHT_BRACKET DE_LEFT_BRACKET  &morph_tab_hold DE_EURO DE_DOLLAR  &kp DE_PERCENT  &kp DE_CARET  &trans  &trans  &kp RIGHT_SHIFT  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &kp RIGHT_GUI  &trans  &trans  &morph_tab_hold DE_PIPE DE_BACKSLASH  &kp DE_AMPERSAND  &kp DE_AT_SIGN  &kp DE_HASH  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp DE_LEFT_PARENTHESIS  &kp DE_RIGHT_PARENTHESIS  &kp UNDERSCORE  &trans  &trans  &trans
+&trans  &morph_tab_hold DE_RIGHT_BRACE DE_LEFT_BRACE  &kp DE_LESS_THAN  &morph_tab_hold DE_SINGLE_QUOTE DE_DOUBLE_QUOTES  &kp DE_GREATER_THAN  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &morph_tab_hold DE_RIGHT_BRACKET DE_LEFT_BRACKET  &morph_tab_hold DE_EURO DE_DOLLAR  &kp DE_PERCENT  &kp DE_CARET  &trans  &trans  &kp RIGHT_SHIFT  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &kp RIGHT_GUI  &trans  &trans  &morph_tab_hold DE_PIPE DE_BACKSLASH  &kp DE_AMPERSAND  &kp DE_AT_SIGN  &kp DE_HASH  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp DE_LEFT_PARENTHESIS  &kp DE_RIGHT_PARENTHESIS  &kp DE_MINUS  &trans  &trans  &trans
             >;
         };
 
