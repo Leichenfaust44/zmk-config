@@ -111,7 +111,7 @@
         num_layer {
             display-name = "Num";
             bindings = <
-&trans  &kp DE_LESS_THAN  &kp DE_N7  &kp DE_N8  &kp DE_N9  &kp DE_SLASH  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp DE_EXCLAMATION  &kp DE_N4  &kp DE_N5  &kp DE_N6  &kp DE_ASTERISK  &trans  &kp RIGHT_SHIFT  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &kp RIGHT_GUI  &trans  &trans  &kp DE_TILDE  &kp DE_N1  &kp DE_N2  &kp DE_N3  &kp DE_PLUS  &trans  &trans  &trans  &trans  &trans  &trans  &kp DE_PERIOD  &kp DE_N0  &kp DE_MINUS  &trans  &trans  &trans
+&trans  &kp DE_LESS_THAN  &kp DE_N7  &kp DE_N8  &kp DE_N9  &kp DE_SLASH  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp DE_EQUAL  &kp DE_N4  &kp DE_N5  &kp DE_N6  &kp DE_ASTERISK  &trans  &kp RIGHT_SHIFT  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &kp RIGHT_GUI  &trans  &trans  &kp DE_TILDE  &kp DE_N1  &kp DE_N2  &kp DE_N3  &kp DE_PLUS  &trans  &trans  &trans  &trans  &trans  &trans  &kp DE_PERIOD  &kp DE_N0  &kp DE_MINUS  &trans  &trans  &trans
             >;
         };
 
