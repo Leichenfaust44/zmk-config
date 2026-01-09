@@ -27,7 +27,7 @@
             //                    | GUI | LWR | SPC | ENT | RSE  | ALT |
 
             bindings = <
-&trans  &kp DE_Q  &mt DE_A_UMLAUT DE_W  &mt DE_O_UMLAUT DE_F  &mt DE_U_UMLAUT DE_P  &kp DE_B  &kp DE_J  &kp DE_L  &kp DE_U  &kp DE_Y  &none  &trans  &trans  &mt LEFT_GUI DE_A  &mt LEFT_ALT DE_R  &mt LEFT_CONTROL DE_S  &mt LEFT_SHIFT DE_T  &kp DE_G  &kp DE_M  &mt RIGHT_SHIFT DE_N  &mt RIGHT_CONTROL DE_E  &mt RIGHT_ALT DE_I  &mt RIGHT_GUI DE_O  &trans  &trans  &kp DE_Z  &kp DE_X  &kp DE_C  &kp DE_D  &kp DE_V  &kp DE_K  &kp DE_H  &kp DE_COMMA  &kp DE_PERIOD  &kp DE_MINUS  &trans  &kp C_MENU_ESC  &lt 1 DE_SPACE  &lt 2 TAB  &lt 4 RETURN  &lt 3 BACKSPACE  &lt 5 DELETE
+&trans  &kp DE_Q  &mt DE_A_UMLAUT DE_W  &mt DE_O_UMLAUT DE_F  &mt DE_U_UMLAUT DE_P  &kp DE_B  &kp DE_J  &kp DE_L  &kp DE_U  &kp DE_Y  &none  &trans  &trans  &kp LG(DE_A)  &kp LA(DE_R)  &kp LC(DE_S)  &kp LC(DE_T)  &kp DE_G  &kp DE_M  &kp RS(RIGHT_SHIFT)  &kp RC(DE_E)  &kp RA(DE_I)  &kp RG(DE_O)  &trans  &trans  &kp DE_Z  &kp DE_X  &kp DE_C  &kp DE_D  &kp DE_V  &kp DE_K  &kp DE_H  &kp DE_COMMA  &kp DE_PERIOD  &kp DE_MINUS  &trans  &kp C_MENU_ESC  &lt 1 DE_SPACE  &lt 2 TAB  &lt 4 RETURN  &lt 3 BACKSPACE  &lt 5 DELETE
             >;
         };
 
