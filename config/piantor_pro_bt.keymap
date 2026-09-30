@@ -1,6 +1,14 @@
 /*
- * Copyright (c) 2020 The ZMK Contributors
+ * Piantor Pro BT - Einsteiger-Layout fuer Host mit Tastaturlayout "Deutsch (Schweiz)"
  *
+ * WICHTIG: ZMK sendet US-Keycodes, das Betriebssystem uebersetzt sie nach DE-CH.
+ *  - Taste rechts von T sendet "Y" und ergibt auf dem CH-Host ein "z".
+ *  - Taste unten links sendet "Z" und ergibt auf dem CH-Host ein "y".
+ *  - Symbole sind als Shift-/AltGr-Kombination der CH-Belegung geschrieben.
+ *
+ * Layer 0 = Basis, Layer 1 = Zeichen, Layer 2 = Admin
+ *
+ * Copyright (c) 2020 The ZMK Contributors
  * SPDX-License-Identifier: MIT
  */
 
@@ -11,56 +19,71 @@
 
 / {
     chosen {
-        zmk,physical-layout = &five_col_layout;
+        zmk,physical-layout = &default_layout;
     };
 };
 
 / {
+    /*
+     * Kombo Q + P (Positionen 0 und 9) wechselt auf den Admin-Layer.
+     * Nur auf Layer 0 aktiv, damit z.B. "1" + "0" auf Layer 1 nichts ausloest.
+     * Zurueck geht es auf Layer 2 mit jeder Daumentaste (&to 0).
+     */
+    combos {
+        compatible = "zmk,combos";
+
+        combo_admin {
+            timeout-ms = <80>;
+            require-prior-idle-ms = <150>;
+            key-positions = <0 9>;
+            layers = <0>;
+            bindings = <&to 2>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
-            display-name = "QWERTZ";
-            // -----------------------------------------------
+        base_layer {
+            display-name = "BASIS";
+            // Ergebnis auf dem CH-Host:
             // |  Q  |  W  |  E  |  R  |  T  |  Z  |  U  |  I  |  O  |  P  |
-            // |  A  |  S  |  D  |  F  |  G  |  H  |  J  |  K  |  L  |  ;  |
-            // |  Y  |  X  |  C  |  V  |  B  |  N  |  M  |  ,  |  .  |  /  |
-            //             | SHFT | LWR | SPC | ENT | RSE | BSPC |
+            // |  A  |  S  |  D  |  F  |  G  |  H  |  J  |  K  |  L  |  ö  |
+            // |  Y  |  X  |  C  |  V  |  B  |  N  |  M  |  ,  |  .  |  -  |
+            //           | Shift | Space | Zeichen | Enter | Bksp | Ctrl |
             bindings = <
-                &kp Q &kp W &kp E &kp R &kp T   &kp Z &kp U  &kp I     &kp O   &kp P
-                &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI
-                &kp Y &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH
-                            &kp LSHFT &mo 1 &kp SPACE   &kp RET &mo 2 &kp BSPC
+                &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U &kp I &kp O     &kp P
+                &kp A &kp S &kp D &kp F &kp G   &kp H &kp J &kp K &kp L     &kp SEMI
+                &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M &kp COMMA &kp DOT &kp FSLH
+                          &sk LSHFT &kp SPACE &mo 1   &kp RET &kp BSPC &kp LCTRL
             >;
         };
 
-        lower_layer {
-            display-name = "NUMBER";
-            // -----------------------------------------------------------------
-            // |  1  |  2  |  3  |  4  |  5    |  6  |  7  |  8  |  9  |  0  |
-            // | BT1 | BT2 | BT3 | BT4 | BT5   | LFT | DWN |  UP | RGT | TAB |
-            // | BTCR| RGB | RST | BOOT| Unlock| GUI | ALT |     |     | ESC |
-            //                    |     |     |     |     |     |     |
+        zeichen_layer {
+            display-name = "ZEICHEN";
+            // |  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  |  9  |  0  |
+            // |  !  |  ?  |  "  |  '  |  :  |  ;  |  (  |  ↑  |  )  |  /  |
+            // |  @  |  €  |  #  |  %  |  +  |  ä  |  ←  |  ↓  |  →  |  ü  |
+            //           |     |     | Zeichen |     |     |     |
             bindings = <
-                &kp N1       &kp N2          &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0
-                &bt BT_SEL 0 &bt BT_SEL 1    &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp TAB
-                &bt BT_CLR   &rgb_ug RGB_TOG &sys_reset   &bootloader  &studio_unlock &kp LGUI &kp LALT &trans &trans    &kp ESC
-                                                           &trans       &trans       &trans   &trans   &trans &trans
+                &kp N1         &kp N2         &kp N3        &kp N4         &kp N5         &kp N6          &kp N7        &kp N8       &kp N9        &kp N0
+                &kp LS(RBKT)   &kp LS(MINUS)  &kp LS(N2)    &kp MINUS      &kp LS(DOT)    &kp LS(COMMA)   &kp LS(N8)    &kp UP       &kp LS(N9)    &kp LS(N7)
+                &kp RA(N2)     &kp RA(E)      &kp RA(N3)    &kp LS(N5)     &kp LS(N1)     &kp SQT         &kp LEFT      &kp DOWN     &kp RIGHT     &kp LBKT
+                                              &trans &trans &trans   &trans &trans &trans
             >;
         };
 
-        raise_layer {
-            display-name = "SYMBOL";
-            // -----------------------------------------------------------------
-            // |  !  |  @  |  #  |  $  |  %  |  ^  |  &  |  *  |  (  |  )  |
-            // | HUD | HUI | CTRL|     |     |  -  |  =  |  [  |  ]  |  \  |
-            // |     |  `  |  '  |  ~  |     |  _  |  +  |  {  |  }  | "|" |
-            //                    |     |     |     |     |     |     |
+        admin_layer {
+            display-name = "ADMIN";
+            // | BT1 | BT2 | BT3 | BT4 | BT5 |BTclr|     |     |     |     |
+            // |Reset|Boot |Unlck|     |     |     |     |     |     |     |
+            // |     |     |     |     |     |     |     |     |     |     |
+            //      | Zurueck (alle sechs Daumentasten = Layer 0) |
             bindings = <
-                &kp EXCL        &kp AT          &kp HASH   &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp ASTRK &kp LPAR &kp RPAR
-                &rgb_ug RGB_HUD &rgb_ug RGB_HUI &kp LCTRL  &trans   &trans      &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT &kp BSLH
-                &trans          &kp GRAVE       &kp SQT    &kp TILDE &trans     &kp UNDER &kp PLUS  &kp LBRC  &kp RBRC &kp PIPE
-                                                            &trans   &trans     &trans    &trans    &trans   &trans
+                &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &bt BT_CLR &none &none &none &none
+                &sys_reset   &bootloader  &studio_unlock &none      &none          &none &none &none &none &none
+                &none        &none        &none        &none        &none          &none &none &none &none &none
+                                          &to 0 &to 0 &to 0   &to 0 &to 0 &to 0
             >;
         };
     };
